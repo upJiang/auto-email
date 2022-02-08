@@ -1,9 +1,8 @@
 // 发送企业微信消息
-
 const schedule = require("node-schedule"); //定时器任务库
 const axios = require("axios");
 
-function getAllDataAndSendMail() {
+function setMessage() {
   axios
     .post(
       "https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=40e3ea82-9361-464d-b177-e61707aafa9f",
@@ -30,8 +29,8 @@ function getAllDataAndSendMail() {
     });
 }
 
-console.log("NodeMail: 开始等待目标时刻...");
+console.log("开始等待目标时刻...");
 let j = schedule.scheduleJob("1 1 10 5 * *", function () {
   console.log("执行任务");
-  getAllDataAndSendMail();
+  setMessage();
 });
