@@ -9,11 +9,9 @@
   "author": "jiang",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.25.0",
-    "cheerio": "^1.0.0-rc.2",
+    "axios": "^0.26.0",
     "ejs": "^2.5.7",
     "node-schedule": "^1.2.5",
-    "nodemailer": "^4.4.0",
-    "superagent": "^3.8.1"
+    "nodemailer": "^4.4.0"
   }
 }
